@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fballtech.scoutbasebeta.controllers.LoginController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #0b1f4a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="350.0">
+               <children>
+                  <Text fill="WHITE" layoutX="82.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ScoutBase" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="81.064453125" AnchorPane.rightAnchor="81.935546875" AnchorPane.topAnchor="258.0">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="56.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Football Management System">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="createAccountButton" layoutX="62.0" layoutY="546.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: #0b1f4a;" text="Don't have an account? Create one!" textFill="WHITE" underline="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="546.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="213.0" fitWidth="201.0" layoutX="74.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Desktop/ScoutBaseLog.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="577.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="350.0" prefHeight="600.0" prefWidth="350.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="92.0" text="Login" AnchorPane.bottomAnchor="475.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="95.0">
+                     <font>
+                        <Font name="Arial Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="30.0" layoutY="148.0" prefHeight="225.0" prefWidth="290.0" AnchorPane.bottomAnchor="228.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="148.0">
+                     <children>
+                        <TextField fx:id="usernameInput" layoutY="60.0" prefHeight="27.0" prefWidth="290.0" AnchorPane.bottomAnchor="138.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="60.0" />
+                        <Label layoutX="-1.0" layoutY="37.0" prefHeight="17.0" prefWidth="77.0" text="Username:">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="-1.0" layoutY="113.0" text="Password:">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordInput" layoutY="135.0" prefHeight="27.0" prefWidth="285.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="135.0" />
+                        <Button fx:id="loginButton" layoutY="185.0" mnemonicParsing="false" onAction="#verifyLogin" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #0b1f4a;" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

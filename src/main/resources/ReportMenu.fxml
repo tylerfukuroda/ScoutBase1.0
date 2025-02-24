@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #6b7281;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fballtech.scoutbasebeta.controllers.ReportMenuController">
+   <children>
+      <HBox layoutX="301.0" layoutY="28.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="670.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #6b7281;">
+               <children>
+                  <Text layoutX="310.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Reports">
+                     <font>
+                        <Font name="Arial Bold" size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="22.0" layoutY="141.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="559.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="141.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <TextField fx:id="searchBar" layoutX="40.0" layoutY="35.0" onAction="#searchReportsByName" prefHeight="27.0" prefWidth="271.0" promptText="Search By Name" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="35.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <ComboBox fx:id="filterByPosition" layoutX="219.0" layoutY="36.0" prefWidth="150.0" promptText="Filter" visibleRowCount="12" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="36.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="300.0" layoutY="230.0" prefHeight="510.0" prefWidth="800.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0">
+         <children>
+            <TableView fx:id="reportsTable" layoutX="21.0" layoutY="12.0" prefHeight="501.0" prefWidth="760.0" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+              <columns>
+                <TableColumn fx:id="reportIdColumn" prefWidth="90.8867073059082" text="Report ID" />
+                <TableColumn fx:id="firstNameColumn" prefWidth="125.11326599121094" text="First Name" />
+                  <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
+                  <TableColumn fx:id="positionColumn" prefWidth="75.0" text="Position" />
+                  <TableColumn fx:id="classColumn" prefWidth="75.0" text="Class" />
+                  <TableColumn fx:id="gradeColumn" prefWidth="75.0" text="Grade" />
+                  <TableColumn fx:id="dateCreatedColumn" prefWidth="99.44760131835938" text="Date Created" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <HBox layoutY="700.0" prefHeight="100.0" prefWidth="800.0">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="deleteReportButton" layoutX="130.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteReport" prefHeight="50.0" prefWidth="140.0" text="Delete Report" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="25.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="viewReportButton" layoutX="130.0" layoutY="25.0" mnemonicParsing="false" onAction="#viewReport" prefHeight="50.0" prefWidth="140.0" text="View Report" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="25.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #132134;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fballtech.scoutbasebeta.controllers.CreateAccountController">
+   <children>
+      <HBox layoutX="200.0" prefHeight="140.0" prefWidth="600.0" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="148.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="169.0" fitWidth="125.0" layoutX="238.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="237.0" AnchorPane.topAnchor="8.0">
+                     <image>
+                        <Image url="@../../../Desktop/ScoutBase%20Log.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="1.0" layoutY="141.0" prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="458.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="141.0">
+         <children>
+            <TextField fx:id="firstNameText" layoutX="25.0" layoutY="38.0" prefHeight="30.0" prefWidth="550.0" promptText="First Name" style="-fx-background-color: #132134; -fx-border-color: #e5e5e5; -fx-border-style: none none solid none; -fx-text-fill: white;">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="lastNameText" layoutX="26.0" layoutY="237.0" prefHeight="30.0" prefWidth="550.0" promptText="Last Name" style="-fx-background-color: #132134; -fx-border-color: #e5e5e5; -fx-border-style: none none solid none; -fx-text-fill: white;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailText" layoutX="26.0" layoutY="289.0" prefHeight="30.0" prefWidth="550.0" promptText="Email" style="-fx-background-color: #132134; -fx-border-color: #e5e5e5; -fx-border-style: none none solid none; -fx-text-fill: white;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="createButton" layoutX="26.0" layoutY="496.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="57.0" prefWidth="135.0" style="-fx-border-radius: 20;" text="Create My Account!">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <PasswordField fx:id="pinText" layoutX="26.0" layoutY="388.0" prefHeight="27.0" prefWidth="135.0" promptText="4-digit Pin" style="-fx-background-color: #132134; -fx-border-color: #e5e5e5; -fx-border-style: none none solid none; -fx-text-fill: white;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="pinConfirm" layoutX="26.0" layoutY="435.0" prefHeight="27.0" prefWidth="135.0" promptText="Confirm Pin" style="-fx-background-color: #132134; -fx-border-color: #e5e5e5; -fx-border-style: none none solid none; -fx-text-fill: white;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="usernameText" layoutX="25.0" layoutY="336.0" prefHeight="27.0" prefWidth="550.0" promptText="Username" style="-fx-background-color: #132134; -fx-border-color: #e5e5e5; -fx-border-style: none none solid none; -fx-text-fill: white;">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
