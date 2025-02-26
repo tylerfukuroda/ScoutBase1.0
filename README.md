@@ -10,7 +10,7 @@ Welcome to ScoutBase1.0! ScoutBase1.0 is the beta version of a football manageme
 
 <img width="686" alt="Screenshot 2025-02-21 at 11 27 31 AM" src="https://github.com/user-attachments/assets/b52fd108-3f09-442f-8c69-5510fd3d4aa5" />
 
-
+\n
 **Create an Account**
 
 <img width="592" alt="Screenshot 2025-02-21 at 11 27 51 AM" src="https://github.com/user-attachments/assets/77a20c6a-6a0c-4032-b037-bf2a4ec60ae9" />
